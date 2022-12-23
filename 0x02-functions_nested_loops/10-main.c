@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the code for Kelai137.
  *
  * Return: Always 0.
 */
