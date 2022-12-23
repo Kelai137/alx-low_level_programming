@@ -1,22 +1,20 @@
 #include <stdio.h>
-
 /**
- * main - Lists all the natural numbers below 1024 (excluded)
- * that are multiples of 3 or 5.
+ * main - print first 50 fibonacci
  *
- * Return: Always 0.
+ * Return: 0 always.
 */
 int main(void)
 {
-	int i, sum = 0;
-
-	for (i = 0; i < 1024; i++)
-	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
-	}
-
-	printf("%d\n", sum);
-
-	return (0);
+long int i, x = 1, y = 2, sum = 0;
+for (i = 0; i < 49; i++)
+{
+printf("%ld, ", x);
+sum = x + y;
+x = y;
+y = sum;
+if (i == 48)
+printf("%ld\n", x);
+}
+return (0);
 }
