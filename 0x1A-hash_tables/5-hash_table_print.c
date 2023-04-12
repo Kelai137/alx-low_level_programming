@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_tabl_print - this prints a hash table
+ * hash_table_print - this prints a hash table
  * @ ht : hash table to print
  *
  * Retrun : void
@@ -12,7 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
 	hash_node_t *tmp;
-	char flag = 0; /* 0 when no data has been print as of yet */
+	char flag = 0; /* 0 while no data has been print as of yet */
 
 	if (ht == NULL || ht->array == NULL)
 		return;
